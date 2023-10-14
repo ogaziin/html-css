@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            padding: 10px 10px 10px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        nav a {
+            margin-left: 15px;
+        }
+
+        strong {
+            color: rgb(38, 37, 37);
+        }
+
+        #externo::after {
+            content: '\00A0\1F517';
+        }
+
+        table {
+            padding: 10px;
+            border: 1px solid black;
+            width: 900px;
+        }
+
+        div {
+            overflow-x: auto;
+        }
+
+        caption {
+            text-align: left;
+            font-size: 1.5em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        th {
+            background-color: rgb(70, 70, 70);
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(203, 203, 203);
+        }
+
+        .aumento-populacional {
+            color: rgb(13, 150, 13);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista das unidades federativas do Brasil por população</h1>
+        <hr />
+    </header>
+    <nav>
+        <a href="#">Artigo</a>
+        <a href="#">Discussão</a>
+    </nav>
+    <hr />
+    <p>Origem: Wikipédia, a enciclopédia livre.</p>
+
+    <main>
+        <p>Esta é uma lista da <strong>população das unidades federativas <a href="#">brasileiras</a></strong> segundo dados divulgados pelo <a href="#">Instituto Brasileiro de Geografia e Estatística</a> (IBGE) em 28 de junho de 2023, com base no <a href="#" rel="external" id="externo">Censo de 2022.</a></p>
+    
+        <div class="responsive-table">
+            <table>
+                <caption>
+                    Lista
+                    <hr />
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Unidade federativa</th>
+                        <th>População (censo de 2022)</th>
+                        <th>População (censo de 2010)</th>
+                        <th>Mudança</th>
+                        <th>País comparável (habitantes)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>São Paulo</td>
+                        <td>44 420 459</td>
+                        <td>41 262 199</td>
+                        <td class="aumento-populacional">+7 65%</td>
+                        <td><a href="#">Espanha</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Minas Gerais</td>
+                        <td>20 538 718</td>
+                        <td>19 597 330</td>
+                        <td class="aumento-populacional">+4.8%</td>
+                        <td><a href="#">Burquina Fasso</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rio de Janeiro</td>
+                        <td>16 054 524</td>
+                        <td>15 989 929</td>
+                        <td class="aumento-populacional">+0.4%</td>
+                        <td><a href="#">Camboja</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Bahia</td>
+                        <td>14 136 417</td>
+                        <td>14 016 906</td>
+                        <td class="aumento-populacional">+0.85%</td>
+                        <td><a href="#">Zimbabwe</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Paraná</td>
+                        <td>11 443 208</td>
+                        <td>10 444 526</td>
+                        <td class="aumento-populacional">+9.56%</td>
+                        <td><a href="#  ">Tunísia</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </main>
+</body>
+</html>
