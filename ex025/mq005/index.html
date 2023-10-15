@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css" media="all">
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Meu Site</h1>
         <i class="material-icons" id="burger-menu" onclick="clickMenu()">menu</i>
@@ -38,7 +39,15 @@
                 items.style.display = 'none';
             } else {
                 items.style.display = 'block';
-            }
+            };
+        };
+
+        function changeSize() {
+            if(window.innerWidth >= 768) {
+                items.style.display = 'block';
+            } else {
+                items.style.display = 'none';
+            };
         };
     </script>
 
