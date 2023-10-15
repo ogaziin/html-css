@@ -60,8 +60,7 @@ Grandes Telas: acima de 1200px
     main > section#advanced-edition {
         width: 300px;
         margin: auto;
-        height: 200px;
+        height: 400px;
         margin-top: 15px;
     }
-
 }
